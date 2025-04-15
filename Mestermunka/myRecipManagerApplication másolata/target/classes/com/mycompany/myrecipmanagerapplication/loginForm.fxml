@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.myrecipmanagerapplication.LoginFormController">
+   <children>
+      <AnchorPane fx:id="su_signupform" maxHeight="400.0" maxWidth="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="gradient" stylesheets="@styler.css" StackPane.alignment="BOTTOM_LEFT">
+         <children>
+            <Label layoutX="14.0" layoutY="30.0" text="Regisztráció">
+               <font>
+                  <Font name="MV Boli" size="18.0" />
+               </font>
+            </Label>
+            <TextField id="textfield" fx:id="su_username" layoutX="50.0" layoutY="128.0" onAction="#signupbtn" prefHeight="30.0" prefWidth="200.0" promptText="Felhasználónév" stylesheets="@styler.css" />
+            <PasswordField id="textfield" fx:id="su_password" layoutX="50.0" layoutY="169.0" onAction="#signupbtn" prefHeight="30.0" prefWidth="200.0" promptText="Jelszó" stylesheets="@styler.css" />
+            <Button id="login-button" fx:id="su_signupbtn" layoutX="50.0" layoutY="241.0" mnemonicParsing="false" onAction="#signupbtn" prefHeight="50.0" prefWidth="200.0" stylesheets="@styler.css" text="Regisztrálok" />
+            <Button id="create-button" fx:id="haveaccbtn" layoutX="98.0" layoutY="357.0" mnemonicParsing="false" onAction="#switchFrom" stylesheets="@styler.css" text="Már van fiókom" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="np_newPassForm" layoutX="310.0" layoutY="10.0" maxHeight="400.0" maxWidth="300.0" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="gradient" stylesheets="@styler.css" visible="false" StackPane.alignment="TOP_RIGHT">
+         <children>
+            <Label layoutX="50.0" layoutY="43.0" text="Elfelejtett jelszó">
+               <font>
+                  <Font name="MV Boli" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField id="textfield" fx:id="np_newPassword" layoutX="50.0" layoutY="141.0" onAction="#changePassBtn" prefHeight="30.0" prefWidth="200.0" promptText="Jelszó" stylesheets="@styler.css" />
+            <PasswordField id="textfield" fx:id="np_confirmPassword" layoutX="50.0" layoutY="185.0" onAction="#changePassBtn" prefHeight="30.0" prefWidth="200.0" promptText="Jelszó megerősítése" stylesheets="@styler.css" />
+            <Button id="login-button" fx:id="changePassBtn" layoutX="50.0" layoutY="241.0" mnemonicParsing="false" onAction="#changePassBtn" prefHeight="50.0" prefWidth="200.0" stylesheets="@styler.css" text="Jelszó megváltoztatása" />
+            <Button id="create-button" fx:id="np_backBtn" layoutX="124.0" layoutY="357.0" mnemonicParsing="false" onAction="#backToUserForm" text="Vissza" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="forgotpass_form" maxHeight="400.0" maxWidth="300.0" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="gradient" stylesheets="@styler.css" visible="false" StackPane.alignment="TOP_RIGHT">
+         <children>
+            <Label layoutX="50.0" layoutY="43.0" text="Elfelejtett jelszó">
+               <font>
+                  <Font name="MV Boli" size="18.0" />
+               </font>
+            </Label>
+            <TextField id="textfield" fx:id="fp_username" layoutX="50.0" layoutY="185.0" prefHeight="30.0" prefWidth="200.0" promptText="Felhasználónév" stylesheets="@styler.css" />
+            <Button id="login-button" fx:id="fp_proceedBtn" layoutX="50.0" layoutY="241.0" mnemonicParsing="false" onAction="#proceedbtn" prefHeight="50.0" prefWidth="200.0" stylesheets="@styler.css" text="Tovább" />
+            <Button id="create-button" fx:id="fp_backBtn" layoutX="124.0" layoutY="357.0" mnemonicParsing="false" onAction="#backToLoginForm" text="Vissza" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="si_loginform" maxHeight="400.0" maxWidth="300.0" minHeight="400.0" minWidth="300.0" prefHeight="400.0" prefWidth="300.0" styleClass="gradient" stylesheets="@styler.css" StackPane.alignment="TOP_RIGHT">
+         <children>
+            <Label layoutX="50.0" layoutY="36.0" text="Bejelentkezés">
+               <font>
+                  <Font name="MV Boli" size="18.0" />
+               </font>
+            </Label>
+            <TextField id="textfield" fx:id="si_username" layoutX="50.0" layoutY="128.0" onAction="#loginBtn" prefHeight="30.0" prefWidth="200.0" promptText="Felhasználónév" stylesheets="@styler.css" />
+            <PasswordField id="textfield" fx:id="si_password" layoutX="50.0" layoutY="169.0" onAction="#loginBtn" prefHeight="30.0" prefWidth="200.0" promptText="Jelszó" stylesheets="@styler.css" />
+            <Button id="login-button" fx:id="si_loginbtn" layoutX="50.0" layoutY="241.0" mnemonicParsing="false" onAction="#loginBtn" prefHeight="50.0" prefWidth="200.0" stylesheets="@styler.css" text="Belépés" />
+            <Hyperlink fx:id="si_forgotpass" layoutX="50.0" layoutY="210.0" onAction="#switchForgotPass" text="Elfelejtetted a jelszavad?" />
+            <Button id="create-button" fx:id="create_btn" layoutX="166.0" layoutY="360.0" mnemonicParsing="false" onAction="#switchFrom" text="Regisztrálok!" />
+            <Label layoutX="50.0" layoutY="364.0" text="Nincs még fiókod?" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="side_form" maxHeight="400.0" maxWidth="300.0" prefHeight="400.0" prefWidth="300.0" StackPane.alignment="TOP_LEFT">
+         <children>
+            <AnchorPane id="leftbackground" prefHeight="400.0" prefWidth="300.0" stylesheets="@styler.css">
+               <children>
+                  <ImageView fitHeight="400.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../pictures/0.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,97 @@
+
+#topbarleft{
+    -fx-background-color: linear-gradient(to bottom left,  #ed5534 , #c16b58  );
+    -fx-border-radius: 10px 50px 50px 10px;
+    -fx-background-radius: 10px 50px 50px 10px;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-padding:5px 0x 0px 5px;
+}
+#topbarcenter{
+    -fx-background-color: linear-gradient(to bottom left,  #ed5534 , #c16b58  );
+    -fx-border-radius: 50px 50px 50px 50px;
+    -fx-background-radius: 50px 50px 50px 50px;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-padding:5px 0x 0px 5px;
+}
+#topbarright{
+    -fx-background-color: linear-gradient(to bottom left,  #ed5534 , #c16b58  );
+    -fx-border-radius: 50px 10px 10px 50px;
+    -fx-background-radius: 50px 10px 10px 50px;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-padding:5px 0x 0px 5px;
+}
+#menubar{
+    -fx-background-color: linear-gradient(to bottom left,  #ed5534 , #c16b58);
+    -fx-border-radius: 10px 50px 50px 10px;
+    -fx-background-radius: 10px 50px 50px 10px;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-border-padding:5px 0x 0px 5px;
+}
+.sideMenuButton{
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-background-radius: 10px 50px 50px 10px;
+    -fx-border-radius: 10px 50px 50px 10px;
+}
+.sideMenuButton:hover{
+    -fx-background-color: #c16b58;
+}
+
+#exitButton{
+    -fx-background-color: transparent;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-background-radius: 50px;;
+    -fx-border-radius: 50px;
+}
+#addrecipButton{
+    -fx-background-color: linear-gradient(to bottom left,  #ed5534 , #c16b58);
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-background-radius: 50px;;
+    -fx-border-radius: 50px;
+}
+.white_bg{
+    -fx-background-color: #fff;
+}
+
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 5,0,0,0);
+}
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-border-color: linear-gradient(to bottom right, #ed5534 , #c16b58);
+    -fx-border-radius: 5px;
+    -fx-border-width: 1.5px;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right, #ed5534 , #c16b58);
+    -fx-background-insets: 0 0 0 0;
+}
+
+.table-view .column-header, .filter{
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+TableView Button{
+    -fx-background-color: linear-gradient(to bottom left,  #ed5534 , #c16b58);
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+    -fx-background-radius: 50px;;
+    -fx-border-radius: 50px;
+}
+#ingredientsContainer {
+    -fx-spacing: 10px;
+}
